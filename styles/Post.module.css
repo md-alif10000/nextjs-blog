@@ -1,0 +1,50 @@
+.post{
+    display: flex;
+    max-height: 250px;
+    overflow: hidden;
+    margin-top: 15px;
+    border-radius: 5px;
+    align-items: center;
+    -webkit-box-shadow: 2px 4px 23px -2px #000000; 
+box-shadow: 2px 4px 23px -2px #000000;
+}
+.post:hover{
+    -webkit-box-shadow: 2px 4px 27px 8px #000000; 
+box-shadow: 2px 4px 27px 8px #000000;
+
+}
+.postImgContainer{
+    flex: 4;
+    height: 100%;
+    border:2px solid black
+}
+.postImg{
+
+}
+.postInfo{
+    padding: 10px;
+   flex: 6;
+    height: 100%;
+
+}
+.postTitle{
+    font-size: 20px;
+    color: rgba(20, 20, 20, 0.979);
+}
+
+@media  screen and (max-width:480px) {
+    .postTitle{
+        font-size: 16px;
+        margin: 0;
+        padding: 0;
+    }
+    .postTime{
+        font-size: 12px;
+        margin: 0;
+    }
+    .postDesc{
+        font-size: 12px;
+        margin: 0;
+    }
+    
+}

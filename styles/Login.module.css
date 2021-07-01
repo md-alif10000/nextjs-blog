@@ -1,0 +1,70 @@
+.login {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.loginBox {
+  width: 350px;
+  height: 350px;
+  display: flex;
+  border-radius: 5px;
+  flex-direction: column;
+  -webkit-box-shadow: 1px 1px 30px 8px #010405;
+  box-shadow: 1px 1px 30px 8px #010405;
+  background-color: white;
+  padding: 10px;
+}
+
+.loginBox h2 {
+  text-align: center;
+}
+.loginBox form {
+  display: flex;
+  flex-direction: column;
+}
+.loginBox input {
+  border: none;
+  margin-bottom: 5px;
+  padding: 5px;
+  font-size: 16px;
+  letter-spacing: 1.1px;
+  border-bottom: 2px solid rgb(85, 85, 85);
+}
+.loginBox p{
+    font-size: 12px;
+    text-align: center;
+}
+.loginBox p  span{
+    font-size: 14px;
+    color: var(--primary-color);
+    cursor: pointer;
+    margin-left: 10px;
+}
+.loginBox h5{
+    margin: 0;
+    text-align: center;
+    color: var(--primary-color);
+    cursor: pointer;
+}
+.loginBtn {
+  padding: 8px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+  background-color: var(--primary-color);
+  border-radius: 5px;
+  color: white;
+  margin-top: 20px;
+}
+.loginBtn:hover {
+  -webkit-box-shadow: 1px 1px 30px 8px var(--primary-color);
+  box-shadow: 1px 1px 30px 8px var(--primary-color);
+}
+
+.loginBox input:focus {
+  outline: none;
+  border-bottom: 2px solid var(--primary-color);
+}

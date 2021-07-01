@@ -1,0 +1,114 @@
+.header {
+  z-index: 9;
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  align-items: center;
+  width: 100%;
+  -webkit-box-shadow: 2px 7px 9px 5px rgba(0, 0, 0, 0.8);
+  box-shadow: 2px 7px 9px 5px rgba(0, 0, 0, 0.8);
+  background-color: white;
+}
+.headerWrapper {
+  width: 100%;
+  max-width: 1400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+.logo {
+  cursor: pointer;
+}
+
+.searchContainer {
+  border: 2px solid var(--primary-color);
+  border-radius: 5px;
+  height: 40px;
+  width: 500px;
+  display: flex;
+  align-items: center;
+}
+.searchContainer input {
+  border: none;
+  height: 95%;
+  padding: 5px;
+  flex: 1;
+  box-sizing: border-box;
+  font-size: 16px;
+  color: rgb(83, 83, 83);
+}
+.searchContainer input:focus {
+  outline: none;
+   -webkit-box-shadow: 1px 1px 14px 4px #1CD4FF; 
+box-shadow: 1px 1px 14px 4px #1CD4FF;
+}
+.searchContainer input:focus .searchContainer {
+  -webkit-box-shadow: 2px 5px 10px 8px rgba(67, 175, 255, 0.81);
+  box-shadow: 2px 5px 10px 8px rgba(67, 175, 255, 0.81);
+}
+.searchIcon {
+  margin: 5px;
+  font-size: 26px;
+  cursor: pointer;
+}
+.searchIcon:hover {
+  color: var(--primary-color);
+}
+.loginBtn {
+  background-color: var(--primary-color);
+  padding: 7px 15px;
+  margin: 10px;
+  cursor: pointer;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+  transition: all 0.4s ease;
+}
+.loginBtn:hover {
+  -webkit-box-shadow: 2px 5px 17px 12px rgba(67, 175, 255, 0.81);
+  box-shadow: 2px 5px 17px 12px rgba(67, 175, 255, 0.81);
+}
+.registerBtn {
+  background-color: rgb(39, 185, 39);
+  padding: 7px 15px;
+  margin: 10px;
+  cursor: pointer;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+  transition: all 0.4s ease;
+}
+.registerBtn:hover {
+  -webkit-box-shadow: 2px 5px 21px 6px rgba(0, 221, 65, 0.81);
+  box-shadow: 2px 5px 21px 6px rgba(0, 221, 65, 0.81);
+}
+.logoutBtn {
+  background-color: red;
+  padding: 5px 15px;
+  margin: 10px;
+  cursor: pointer;
+  color: white;
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  font-weight: 600;
+  transition: all 0.4s ease;
+  font-size: 14px;
+}
+.logoutBtn:hover {
+  -webkit-box-shadow: 2px 5px 21px 6px rgba(221, 22, 9, 0.81);
+  box-shadow: 2px 5px 21px 6px rgba(221, 22, 9, 0.81);
+}
+
+@media screen and (max-width: 450px) {
+  .searchContainer {
+    display: none;
+  }
+}
